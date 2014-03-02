@@ -1,8 +1,8 @@
 Package: electronics
 Type: Package
 Title: Electronics
-Version: 1.0
-Date: 2014-01-11
+Version: 1.0.1
+Date: 2014-03-02
 Author: Nathan Campos
 Maintainer: Nathan Campos <nathanpc@dreamintech.net>
 Description: This package provides a lot of useful functions for electronics-related applications.
