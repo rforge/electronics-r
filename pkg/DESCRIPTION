@@ -7,3 +7,4 @@ Author: Nathan Campos
 Maintainer: Nathan Campos <nathanpc@dreamintech.net>
 Description: This package provides a lot of useful functions for electronics-related applications.
 License: MIT License
+Depends: ggplot2
