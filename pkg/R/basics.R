@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' ohms_law(v = 12, r = 1)   # Current for 12V across a 1 ohm resistor.
-#' ohms_law(i = 0.1, v = 5)  # Resistance for 5V at 100mA.
+#' ohms_law(v = 5, i = 0.1)  # Resistance for 5V at 100mA.
 ohms_law <- function (r = NULL, i = NULL, v = NULL) {
   # V = RI
   

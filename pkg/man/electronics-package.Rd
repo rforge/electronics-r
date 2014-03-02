@@ -22,13 +22,21 @@ Maintainer: Nathan Campos <nathanpc@dreamintech.net>
 \references{
 ~~ Literature or other references for background information ~~
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
-~~ documentation directory ~~
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+# Ohm's law.
+ohms_law(v = 12, r = 1)   # Current for 12V across a 1 ohm resistor.
+ohms_law(v = 5, i = 0.1)  # Resistance for 5V at 100mA.
+
+# Power.
+power(v = 12, r = 10)  # Power dissipated by a 10 ohm resistor at 12V
+
+# RC filters.
+filter.rc(10000, 0.0001)  # Cutoff frequency of a filter with a 10k ohms resistor and a 100uF capacitor.
+filter.rc.r(1000, 0.0001)  # Resistor for a 1kHz filter with a 100uF capacitor.
+filter.rc.r(1000, 10000)  # Capacitor for a 1kHz filter with a 10k ohms resistor.
 }
