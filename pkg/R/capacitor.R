@@ -1,4 +1,4 @@
-#' Capacitors charging and discharging.
+#' Capacitors charging, discharging, and more.
 #'
 #' @references
 #' \url{http://en.wikipedia.org/wiki/RC_time_constant}
@@ -8,6 +8,35 @@
 
 library("ggplot2")
 
+#' Calculates the capacitance in series.
+#' @param cv Vector of capacitances (Farads).
+#' @return Capacitance value.
+capacitor.series <- function (cv) {
+  cr = 0
+  
+  # Loop through the values.
+  for (c in cv) {
+    cr = cr + (1 / c)
+  }
+  
+  # Get the denominator.
+  cr = cr ^ -1
+  return(cr)
+}
+
+#' Calculates the capacitance in parallel.
+#' @param cv Vector of capacitances (Farads).
+#' @return Capacitance value.
+capacitor.parallel <- function (cv) {
+  cr = 0
+  
+  # Loop through the values.
+  for (c in cv) {
+    cr = cr + c
+  }
+
+  return(cr)
+}
 
 #' Calculates the voltage in a capacitor at a exact time while it's charging.
 #' 
